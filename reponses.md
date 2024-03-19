@@ -16,4 +16,14 @@
 - Q: À quoi sert l’indicateur Quality Gate ?
 - R: à montrer si certains tests spéciaux ont été accomplis. Ces tests permettent d'indiquer si l'application est prête à sa mise en production.
 
+## 2.b
+- Q: Quelle est la différence entre les sections New code et Overall Code dans l’onglet Summary ?
+- R: New code correspond au nouveau code ajouté depuis la dernière analyse de Sonar, tandis que Overall code concerne l'entiereté du code depuis la première analyse de Sonar
+
+- Q: Y a-t-il des Code Smells ? Si oui, combien et pour quelle(s) raison(s) ?
+- R: Oui, 3. il y a deux fois un paramètre inutilisé dans une fonction qu'il faudrait enlever et l'implémentation d'une fonction qui est trop semblable à une autre
+
+- Q: Y a-t-il des Security Hotspots ? Si oui, combien et pour quelle(s) raison(s) ?
+- R: Oui, un seul. L'image python est lancée avec les droits Root par défaut, ce qui peut causer un problème de sécurité potentiel.
+
 https://github.com/AlexandreMaquet-HeArc/TP2_IND-LOG
