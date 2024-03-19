@@ -10,5 +10,4 @@
 - R: Ce mot permet de spécifier certains prérequis à utiliser. Dans ce cas, cela force à utiliser la version 3.10 de Python
 
 
-TODO: ex1.c
 https://github.com/AlexandreMaquet-HeArc/TP2_IND-LOG
