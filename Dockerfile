@@ -13,8 +13,10 @@ RUN pip install /code
 
 COPY --chown=appuser:appuser ./controller /code/controller
 
-USER appuser
+RUN find /code -type f -exec chmod 644 {} \;
 
-RUN chmod -R -w /code
+RUN find /code -type d -exec chmod 755 {} \;
+
+USER appuser
 
 CMD ["uvicorn", "controller.controller:app", "--host", "0.0.0.0", "--port", "80"]
