@@ -11,7 +11,7 @@ COPY --chown=appuser:appuser --chmod=644 ./src /code/src
 
 RUN pip install /code
 
-COPY --chown=appuser:appuser ./controller /code/controller
+COPY --chown=appuser:appuser --chmod=644 ./controller /code/controller
 
 USER appuser
 
