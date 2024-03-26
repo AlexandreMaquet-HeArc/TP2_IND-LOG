@@ -15,4 +15,6 @@ COPY --chown=appuser:appuser ./controller /code/controller
 
 USER appuser
 
+RUN chmod -R -w /code
+
 CMD ["uvicorn", "controller.controller:app", "--host", "0.0.0.0", "--port", "80"]
